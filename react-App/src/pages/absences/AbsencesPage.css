@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Page Layout */
+.absences-page {
+  display: flex;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.absences-content {
+  margin-left: 280px;
+  padding: 40px;
+  width: 100%;
+}
+
+/* Page Header */
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 10px 0;
+}
+
+.page-description {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin: 0 0 20px 0;
+}
+
+.admin-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.admin-button:hover {
+  background-color: #2563eb;
+}
+
+/* Tabs Section */
+.absences-tabs {
+  margin-top: 30px;
+}
+
+.tab-buttons {
+  display: inline-flex;
+  background-color: #f1f5f9;
+  padding: 6px;
+  border-radius: 12px;
+  gap: 4px;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  outline: none;
+}
+
+.tab-button:hover {
+  color: #475569;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.tab-active {
+  background-color: white !important;
+  color: #3b82f6 !important;
+  font-weight: 600 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tab-badge {
+  background-color: #e2e8f0;
+  color: #64748b;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  min-width: 28px;
+  text-align: center;
+}
+
+.tab-active .tab-badge {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .absences-content {
+    margin-left: 240px;
+    padding: 30px 20px;
+  }
+
+  .tab-buttons {
+    width: 100%;
+  }
+  
+  .tab-button {
+    flex: 1;
+    justify-content: center;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .absences-content {
+    margin-left: 0;
+    padding: 20px 15px;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+  
+  .tab-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .tab-button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .tab-badge {
+    padding: 2px 8px;
+    font-size: 0.8rem;
+  }
+  .content-area {
+    border-radius:12px;
+    padding: 15px;
+    margin-top: 15px;
+    max-height: 50%;
+  }
+
+}
