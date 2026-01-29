@@ -45,7 +45,15 @@ export default function card(props) {
                 </>
             )}
             
-            <button className="but" onClick={handleLogin}>{props.button}</button>
+           <button className="but" onClick={() => {
+                if (props.button === "Login") {
+                    navigate('/dashboard');
+                } else if (props.button === "Sign Up") {
+                    navigate('/');
+                }
+            }}>
+                {props.button}
+            </button>
             
             <p id="footer">{props.Q}<Link to={props.to}>{props.sign}</Link></p>
             {!isSignup && (
